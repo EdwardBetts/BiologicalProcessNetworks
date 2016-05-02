@@ -302,8 +302,7 @@ OVERLAP_CLASS_TO_YAXIS_MAX = {
         'interactions': 'Percent of link pairs'
 }
 
-PERCENTAGE_FORMATTER = FuncFormatter(lambda x, y: '{0:1.0f}%'.format(
-        100 * x))
+PERCENTAGE_FORMATTER = FuncFormatter(lambda x, y: '{:1.0%}'.format(x))
 
 ALL_BAR_COLOR = '#A98FBE'
 ACTIVE_BAR_COLOR = '#FABFBB'
